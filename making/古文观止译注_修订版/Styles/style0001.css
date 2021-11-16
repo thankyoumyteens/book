@@ -1,0 +1,808 @@
+/*
+*/
+@font-face {
+	font-family:"zw";
+	src:
+	local("宋体"),local("明体"),local("明朝"),
+	local("Songti"),local("Songti SC"),local("Songti TC"),			/*iOS6+iBooks3*/
+	local("Song S"),local("Song T"),local("STBShusong"),local("TBMincho"),local("HYMyeongJo"),			/*Kindle Paperwihite*/
+	local("DK-SONGTI"),
+	url(../Fonts/zw.ttf),
+	url(res:///opt/sony/ebook/FONT/zw.ttf),
+	url(res:///Data/FONT/zw.ttf),
+	url(res:///opt/sony/ebook/FONT/tt0011m_.ttf),
+	url(res:///ebook/fonts/../../mnt/sdcard/fonts/zw.ttf),
+	url(res:///ebook/fonts/../../mnt/extsd/fonts/zw.ttf),
+	url(res:///ebook/fonts/zw.ttf),
+	url(res:///ebook/fonts/DroidSansFallback.ttf),
+	url(res:///fonts/ttf/zw.ttf),
+	url(res:///../../media/mmcblk0p1/fonts/zw.ttf),
+	url(file:///mnt/us/DK_System/system/fonts/zw.ttf),				/*Duokan Old Path*/
+	url(file:///mnt/us/DK_System/xKindle/res/userfonts/zw.ttf),		/*Duokan 2012 Path*/
+	url(res:///abook/fonts/zw.ttf),
+	url(res:///system/fonts/zw.ttf),
+	url(res:///system/media/sdcard/fonts/zw.ttf),
+	url(res:///media/fonts/zw.ttf),
+	url(res:///sdcard/fonts/zw.ttf),
+	url(res:///system/fonts/DroidSansFallback.ttf),
+	url(res:///mnt/MOVIFAT/font/zw.ttf),
+	url(res:///media/flash/fonts/zw.ttf),
+	url(res:///media/sd/fonts/zw.ttf),
+	url(res:///opt/onyx/arm/lib/fonts/AdobeHeitiStd-Regular.otf),
+	url(res:///../../fonts/zw.ttf),
+	url(res:///../fonts/zw.ttf),
+	url(../../../../../zw.ttf),										/*EpubReaderI*/
+	url(res:///mnt/sdcard/fonts/zw.ttf),							/*Nook for Android: fonts in TF Card*/
+	url(res:///fonts/zw.ttf),										/*ADE1,8, 2.0 Program Path*/
+	url(res:///../../../../Windows/fonts/zw.ttf);					/*ADE1,8, 2.0 Windows Path*/
+}
+
+@font-face {
+	font-family:"zw-himalaya";
+	src:
+	local("Himalaya"),
+	local("DK-SONGTI"),
+	url(../Fonts/zw-himalaya.ttf),
+	url(res:///opt/sony/ebook/FONT/zw-himalaya.ttf),
+	url(res:///Data/FONT/zw-himalaya.ttf),
+	url(res:///opt/sony/ebook/FONT/zw-himalaya.ttf),
+	url(res:///ebook/fonts/../../mnt/sdcard/fonts/zw-himalaya.ttf),
+	url(res:///ebook/fonts/../../mnt/extsd/fonts/zw-himalaya.ttf),
+	url(res:///ebook/fonts/zw-himalaya.ttf),
+	url(res:///ebook/fonts/DroidSansFallback.ttf),
+	url(res:///fonts/ttf/zw-himalaya.ttf),
+	url(res:///../../media/mmcblk0p1/fonts/zw-himalaya.ttf),
+	url(file:///mnt/us/DK_System/system/fonts/zw-himalaya.ttf),					/*Duokan Old Path*/
+	url(file:///mnt/us/DK_System/xKindle/res/userfonts/zw-himalaya.ttf),		/*Duokan 2012 Path*/
+	url(res:///abook/fonts/zw-himalaya.ttf),
+	url(res:///system/fonts/zw-himalaya.ttf),
+	url(res:///system/media/sdcard/fonts/zw-himalaya.ttf),
+	url(res:///media/fonts/zw-himalaya.ttf),
+	url(res:///sdcard/fonts/zw-himalaya.ttf),
+	url(res:///system/fonts/DroidSansFallback.ttf),
+	url(res:///mnt/MOVIFAT/font/zw-himalaya.ttf),
+	url(res:///media/flash/fonts/zw-himalaya.ttf),
+	url(res:///media/sd/fonts/zw-himalaya.ttf),
+	url(res:///opt/onyx/arm/lib/fonts/AdobeHeitiStd-Regular.otf),
+	url(res:///../../fonts/zw-himalaya.ttf),
+	url(res:///../fonts/zw-himalaya.ttf),
+	url(../../../../../zw-himalaya.ttf),									/*EpubReaderI*/
+	url(res:///mnt/sdcard/fonts/zw-himalaya.ttf),							/*Nook for Android: fonts in TF Card*/
+	url(res:///fonts/zw-himalaya.ttf),										/*ADE1,8, 2.0 Program Path*/
+	url(res:///../../../../Windows/fonts/zw-himalaya.ttf);					/*ADE1,8, 2.0 Windows Path*/
+}
+
+@font-face {
+	font-family:"fs";
+	src:
+	local("仿宋"),local("仿宋_GB2312"),
+	local("Yuanti"),local("Yuanti SC"),local("Yuanti TC"),			/*iOS6+iBooks3*/
+	local("DK-FANGSONG"),
+	url(../Fonts/fs.ttf),
+	url(res:///opt/sony/ebook/FONT/fs.ttf),
+	url(res:///Data/FONT/fs.ttf),
+	url(res:///opt/sony/ebook/FONT/tt0011m_.ttf),
+	url(res:///ebook/fonts/../../mnt/sdcard/fonts/fs.ttf),
+	url(res:///ebook/fonts/../../mnt/extsd/fonts/fs.ttf),
+	url(res:///ebook/fonts/fs.ttf),
+	url(res:///ebook/fonts/DroidSansFallback.ttf),
+	url(res:///fonts/ttf/fs.ttf),
+	url(res:///../../media/mmcblk0p1/fonts/fs.ttf),
+	url(file:///mnt/us/DK_System/system/fonts/fs.ttf),				/*Duokan Old Path*/
+	url(file:///mnt/us/DK_System/xKindle/res/userfonts/fs.ttf),		/*Duokan 2012 Path*/
+	url(res:///abook/fonts/fs.ttf),
+	url(res:///system/fonts/fs.ttf),
+	url(res:///system/media/sdcard/fonts/fs.ttf),
+	url(res:///media/fonts/fs.ttf),
+	url(res:///sdcard/fonts/fs.ttf),
+	url(res:///system/fonts/DroidSansFallback.ttf),
+	url(res:///mnt/MOVIFAT/font/fs.ttf),
+	url(res:///media/flash/fonts/fs.ttf),
+	url(res:///media/sd/fonts/fs.ttf),
+	url(res:///opt/onyx/arm/lib/fonts/AdobeHeitiStd-Regular.otf),
+	url(res:///../../fonts/fs.ttf),
+	url(res:///../fonts/fs.ttf),
+	url(../../../../../fs.ttf),										/*EpubReaderI*/
+	url(res:///mnt/sdcard/fonts/fs.ttf),							/*Nook for Android: fonts in TF Card*/
+	url(res:///fonts/fs.ttf),										/*ADE1,8, 2.0 Program Path*/
+	url(res:///../../../../Windows/fonts/fs.ttf);					/*ADE1,8, 2.0 Windows Path*/
+}
+@font-face {
+	font-family:"kt";
+	src:
+	local("楷体"),local("楷体_GB2312"),
+	local("Kaiti"),local("Kaiti SC"),local("Kaiti TC"),				/*iOS6+iBooks3*/
+	local("MKai PRC"),local("MKaiGB18030C-Medium"),local("MKaiGB18030C-Bold"),			/*Kindle Paperwihite*/
+	local("DK-KAITI"),
+	url(../Fonts/kt.ttf),
+	url(res:///opt/sony/ebook/FONT/kt.ttf),
+	url(res:///Data/FONT/kt.ttf),
+	url(res:///opt/sony/ebook/FONT/tt0011m_.ttf),
+	url(res:///ebook/fonts/../../mnt/sdcard/fonts/kt.ttf),
+	url(res:///ebook/fonts/../../mnt/extsd/fonts/kt.ttf),
+	url(res:///ebook/fonts/kt.ttf),
+	url(res:///ebook/fonts/DroidSansFallback.ttf),
+	url(res:///fonts/ttf/kt.ttf),
+	url(res:///../../media/mmcblk0p1/fonts/kt.ttf),
+	url(file:///mnt/us/DK_System/system/fonts/kt.ttf),				/*Duokan Old Path*/
+	url(file:///mnt/us/DK_System/xKindle/res/userfonts/kt.ttf),		/*Duokan 2012 Path*/
+	url(res:///abook/fonts/kt.ttf),
+	url(res:///system/fonts/kt.ttf),
+	url(res:///system/media/sdcard/fonts/kt.ttf),
+	url(res:///media/fonts/kt.ttf),
+	url(res:///sdcard/fonts/kt.ttf),
+	url(res:///system/fonts/DroidSansFallback.ttf),
+	url(res:///mnt/MOVIFAT/font/kt.ttf),
+	url(res:///media/flash/fonts/kt.ttf),
+	url(res:///media/sd/fonts/kt.ttf),
+	url(res:///opt/onyx/arm/lib/fonts/AdobeHeitiStd-Regular.otf),
+	url(res:///../../fonts/kt.ttf),
+	url(res:///../fonts/kt.ttf),
+	url(../../../../../kt.ttf),										/*EpubReaderI*/
+	url(res:///mnt/sdcard/fonts/kt.ttf),							/*Nook for Android: fonts in TF Card*/
+	url(res:///fonts/kt.ttf),										/*ADE1,8, 2.0 Program Path*/
+	url(res:///../../../../Windows/fonts/kt.ttf);					/*ADE1,8, 2.0 Windows Path*/
+}
+@font-face {
+	font-family:"ktpy";
+	src:
+	local("方正楷体拼音字库01"),
+	local("Kaitipinyin"),local("Kaiti"),local("Kaiti SC"),local("Kaiti TC"),			/*iOS6+iBooks3*/
+	local("MKai PRC"),local("MKaiGB18030C-Medium"),local("MKaiGB18030C-Bold"),			/*Kindle Paperwihite*/
+	local("DK-KAITI"),
+	url(../Fonts/ktpy.ttf),
+	url(res:///opt/sony/ebook/FONT/ktpy.ttf),
+	url(res:///Data/FONT/ktpy.ttf),
+	url(res:///opt/sony/ebook/FONT/tt0011m_.ttf),
+	url(res:///ebook/fonts/../../mnt/sdcard/fonts/ktpy.ttf),
+	url(res:///ebook/fonts/../../mnt/extsd/fonts/ktpy.ttf),
+	url(res:///ebook/fonts/ktpy.ttf),
+	url(res:///ebook/fonts/DroidSansFallback.ttf),
+	url(res:///fonts/ttf/ktpy.ttf),
+	url(res:///../../media/mmcblk0p1/fonts/ktpy.ttf),
+	url(file:///mnt/us/DK_System/system/fonts/ktpy.ttf),				/*Duokan Old Path*/
+	url(file:///mnt/us/DK_System/xKindle/res/userfonts/ktpy.ttf),		/*Duokan 2012 Path*/
+	url(res:///abook/fonts/ktpy.ttf),
+	url(res:///system/fonts/ktpy.ttf),
+	url(res:///system/media/sdcard/fonts/ktpy.ttf),
+	url(res:///media/fonts/ktpy.ttf),
+	url(res:///sdcard/fonts/ktpy.ttf),
+	url(res:///system/fonts/DroidSansFallback.ttf),
+	url(res:///mnt/MOVIFAT/font/ktpy.ttf),
+	url(res:///media/flash/fonts/ktpy.ttf),
+	url(res:///media/sd/fonts/ktpy.ttf),
+	url(res:///opt/onyx/arm/lib/fonts/AdobeHeitiStd-Regular.otf),
+	url(res:///../../fonts/ktpy.ttf),
+	url(res:///../fonts/ktpy.ttf),
+	url(../../../../../ktpy.ttf),									/*EpubReaderI*/
+	url(res:///mnt/sdcard/fonts/ktpy.ttf),							/*Nook for Android: fonts in TF Card*/
+	url(res:///fonts/ktpy.ttf),										/*ADE1,8, 2.0 Program Path*/
+	url(res:///../../../../Windows/fonts/ktpy.ttf);					/*ADE1,8, 2.0 Windows Path*/
+}
+@font-face {
+	font-family:"ht";
+	src:
+	local("微软雅黑"),local("黑体"),
+	local("Heiti"),local("Heiti SC"),local("Heiti TC"),				/*iOS6+iBooks3*/
+	local("MYing Hei S"),local("MYing Hei T"),local("TBGothic"),						/*Kindle Paperwihite*/
+	local("DK-HEITI"),
+	url(../Fonts/ht.ttf),
+	url(res:///opt/sony/ebook/FONT/ht.ttf),
+	url(res:///Data/FONT/ht.ttf),
+	url(res:///opt/sony/ebook/FONT/tt0011m_.ttf),
+	url(res:///ebook/fonts/../../mnt/sdcard/fonts/ht.ttf),
+	url(res:///ebook/fonts/../../mnt/extsd/fonts/ht.ttf),
+	url(res:///ebook/fonts/ht.ttf),
+	url(res:///ebook/fonts/DroidSansFallback.ttf),
+	url(res:///fonts/ttf/ht.ttf),
+	url(res:///../../media/mmcblk0p1/fonts/ht.ttf),
+	url(file:///mnt/us/DK_System/system/fonts/ht.ttf),				/*Duokan Old Path*/
+	url(file:///mnt/us/DK_System/xKindle/res/userfonts/ht.ttf),		/*Duokan 2012 Path*/
+	url(res:///abook/fonts/ht.ttf),
+	url(res:///system/fonts/ht.ttf),
+	url(res:///system/media/sdcard/fonts/ht.ttf),
+	url(res:///media/fonts/ht.ttf),
+	url(res:///sdcard/fonts/ht.ttf),
+	url(res:///system/fonts/DroidSansFallback.ttf),
+	url(res:///mnt/MOVIFAT/font/ht.ttf),
+	url(res:///media/flash/fonts/ht.ttf),
+	url(res:///media/sd/fonts/ht.ttf),
+	url(res:///opt/onyx/arm/lib/fonts/AdobeHeitiStd-Regular.otf),
+	url(res:///../../fonts/ht.ttf),
+	url(res:///../fonts/ht.ttf),
+	url(../../../../../ht.ttf),										/*EpubReaderI*/
+	url(res:///mnt/sdcard/fonts/ht.ttf),							/*Nook for Android: fonts in TF Card*/
+	url(res:///fonts/ht.ttf),										/*ADE1,8, 2.0 Program Path*/
+	url(res:///../../../../Windows/fonts/ht.ttf);					/*ADE1,8, 2.0 Windows Path*/
+}
+
+
+@page {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+body {
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	line-height:125%;
+	text-align: justify;
+	font-family:"zw", serif;
+	font-size:97%;
+}
+
+div {
+	margin:0px;
+	padding:0px;
+	line-height:125%;
+	text-align: justify;
+	font-family:"zw", serif;
+}
+
+p {
+    display: block;
+	text-align: justify;
+	text-indent: 2em; 
+	line-height: 130%;
+	/*font-family: "zw", serif;*/
+	margin: 8pt 0 8pt 0;
+}
+
+.zw {
+	font-family: "zw","宋体","明体","明朝","STBShusong","TBMincho","HYMyeongJo",serif;
+}
+.st, .songti {
+	font-family: "宋体","明体","明朝","STBShusong","TBMincho","HYMyeongJo",serif;
+}
+.fs, .fangsong {
+	font-family: "fs","仿宋","仿宋_gb2312",serif;
+}
+.kt, .kaiti {
+	font-family: "kt","楷体","楷体_gb2312","MKaiGB18030C-Medium","zw",serif;
+}
+.ktpy, .kaitipinyin {
+	font-family: "ktpy","楷体","楷体_gb2312","zw",serif;
+}
+.ht, .heiti {
+	font-family: "ht","微软雅黑","黑体","MYing Hei S","MYing Hei T","TBGothic","zw",sans-serif;
+}
+.yt, .yuanti {
+	font-family: "yt","圆体","zw",sans-serif;
+}
+
+
+a{
+	text-decoration:none;
+	color: #000;
+}
+
+.a{
+    /* 正文 */
+    text-indent: 2em;
+	margin:8pt 0em 8pt 0em;
+}
+
+.aa{
+    /* 正文 */
+    text-indent: 2em;
+	margin:0em;
+}
+
+.center {
+	text-align:center;
+}
+
+.left {
+	text-align:left;
+}
+.right {
+	text-align:right;
+}
+
+.block {
+	display:block;
+}
+
+sub {
+    font-size: 0.8em;
+    line-height: 1.2;
+    vertical-align: sub;
+}
+
+sup {
+    font-size: 0.8em;
+    line-height: 1.2;
+    vertical-align: super;
+}
+
+.italic {
+	color:gray;
+    font-style: italic;
+
+}
+.underline {
+    text-decoration: underline;
+}
+
+/*monospace and code*/
+.monospace, .code {
+    font-family: "Consolas", "Courier New", "Courier",monospace,"fs","仿宋","仿宋_gb2312";
+	background-color:lightgray;
+	margin:0em,1em,0em,2em;
+}
+
+/*封面*/
+.cover {
+	width:100%;
+	height:auto;
+	text-align:center;
+	padding:0px;
+}
+
+
+.booktitle,.bookname {
+	color: #365f91; 
+	margin-top:1em;
+	font-weight:bold;
+	font-size:2.3em;
+	font-family:"宋体",serif;
+	text-indent: 0em!important;
+	text-align: center;
+	line-height: 100%;
+}
+
+.booksubtitle {
+	color: #365f91; 
+	font-size:1.1em;
+	font-family:"ht","zw",sans-serif;
+	text-indent: 0em!important;
+	text-align: center;
+	font-weight:normal;
+}
+
+.bookauthor {
+	font-size:1em;
+	margin-top:0em;
+	font-family:"kt","zw",serif;
+	text-indent: 0em!important;
+	text-align: center;
+}
+
+.booktranslator,.booltranslator {
+	font-size:1em;
+	font-family:"kt","zw",serif;
+	text-indent: 0em!important;
+	text-align: center;
+}
+
+.bookpub {
+	font-family:"ht","zw",sans-serif;
+	text-indent: 0em!important;
+	text-align: center;
+	padding: 75% 5px 5px 5px;
+	font-weight:bold;
+}
+
+.bookpubdate {
+	font-family:"kt","zw",serif;
+	text-indent: 0em!important;
+	text-align: center;
+	padding: 20px 5px 5px 5px;
+}
+
+
+hr.titlehr {
+	margin: 0em 0 2em 35%;
+	height: 5px;
+	width:30%;
+	border-style: none none dotted none;
+	border-width: 0px 0px 3px 0px;
+	border-color: DarkGreen SaddleBrown;
+}
+
+/*前言正文、后记正文*/
+.preface, .postscript {
+	text-indent: 2em;
+	font-family:"kt","zw",serif;
+	line-height: 100%;
+	margin:1em 0.5em 1em 0.5em;
+
+}
+
+/*目录页*/
+.contents {
+	text-indent: 0em!important;
+	margin:0 0em 0 0em;
+	line-height:130%;
+	text-align: left;
+	font-family:"fs","kt","zw",serif;
+	list-style-type:none;
+}
+ul,li{text-indent: 0em!important;margin:0em;padding:0em;font-family:"zw", serif;font-size:0.9em;}
+/*目录页链接*/
+ul li a{ color: black;display:block; width: 100%; text-decoration:none;}
+ul li a:hover{ background:bisque; }
+
+/*目录页部篇标题*/
+.c1,.part {
+	margin:0.5em;
+	color: #000;
+	font-weight:bold;
+	font-size:1.0em;
+	font-family:"ht","微软雅黑","黑体","zw",sans-serif;
+	list-style-type:none;
+}
+
+/*目录页部章标题*/
+.c2,.chapter {
+	margin-top:0.3em;
+	margin-left: 1em; 
+	margin-right: 0.5em;
+	color: black;
+	font-size: 1.0em;
+	font-family:"kt", "zw",sans-serif;
+}
+
+p.c2{
+margin:2pt 0.5em 0 1em;
+}
+
+/*目录页节标题*/
+.c3 {
+	margin-left: 1.5em;
+	font-size:0.85em;
+    line-height: 100%;
+	font-family:"kt","楷体","楷体_gb2312","zw",serif;
+}
+
+h1 {
+	margin:4em 2em 1.5em 2em;
+	line-height:100%;
+	text-align: center;
+    text-indent: 0em;
+	font-weight:bold;
+	font-size:2.6em;
+	font-family:"kt","楷体","楷体_gb2312","zw",sans-serif;
+}
+
+h2 {
+    color: #365f91;
+	margin:3em 2em 3em 2em;
+	line-height:100%;
+	text-align: center;
+    text-indent: 0em;
+	font-weight:bold;
+	font-size:1.2em;
+	font-family:"宋体",serif;
+}
+
+p.titlehr{
+	color: #365f91;
+	margin:3em 0em 0em 0em;
+	line-height:100%;
+	text-align: center;
+    text-indent: 0em;
+	font-weight:bold;
+	font-size:1.2em;
+	font-family: "ht","zw",sans-serif;
+}
+
+/*副标题*/
+.h2sub {
+	margin: 0;
+	color:#555555;
+	line-height:100%;
+	text-align: center;
+	padding: 10px 5px 10px 5px;
+	font-weight:bold;
+	font-size:1.1em;
+	font-family:"kt","楷体","zw",sans-serif;
+}
+
+h3 {
+	color: #365f91;
+	line-height:130%;
+	text-align: center;
+	font-weight:bold;
+	font-size:1em;
+	font-family: "ht","zw",sans-serif;
+	margin:2em 1em 1.2em 1em;
+}
+
+h4 {
+	color:gray;
+	line-height:130%;
+	text-align: justify;
+	font-weight:bold;
+	font-size:1em;
+	font-family:"ht","幼圆","微软雅黑","黑体","zw",sans-serif;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
+
+h5 {
+	float:right;
+	font-family:"kt","楷体","楷体_gb2312","zw",sans-serif;
+	font-size:3em;
+	text-align:center;
+	color: #369;
+	width:1.25em;
+	height:1.1em;
+	background-color:#369;
+	color:#FFF;
+	line-height:1.1em;
+	margin:0;
+	padding:0;
+}
+
+h6 {
+	line-height:130%;
+	text-align: justify;
+	font-weight:bold;
+	font-size:x-small;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
+
+/*作者*/
+.author {
+	color: dimgray;
+	line-height:100%;
+	text-align: justify;
+	font-weight:bold;
+	font-size:medium;
+	font-family:"kt","楷体","楷体_gb2312","zw",sans-serif;
+}
+
+/*标题3作者*/
+.h3author {
+	font-family:"kt","楷体","楷体_gb2312","zw",sans-serif;
+	color:gray;
+	font-size:10.5pt;
+	display:block;
+}
+
+/*篇标题块*/
+.h1note {
+	margin:0 0 0 38.2%;
+	color: darkred;
+	font-family:"ht","微软雅黑","黑体","zw",sans-serif;
+	font-size:90%;
+}
+
+.h1note:first-child {margin-top:1.2em;}
+.h1note:last-child {margin-bottom:1.2em;}
+
+/*编者按*/
+.editornote {
+	margin:0 0 0 4em;
+	color: darkred;
+	font-family:"kt","楷体","楷体_gb2312","zw",sans-serif;
+	font-size:90%;
+	line-height:125%;
+}
+
+.editornote:first-child {margin-top:1.2em;}
+.editornote:last-child {margin-bottom:1.2em;}
+
+/*标题2注*/
+.h2note {
+	margin: 0;
+	line-height:100%;
+	text-align: center;
+	padding: 0px 5px 10px 5px;
+	font-weight:bold;
+	font-size:1.0em;
+	font-family:"kt","楷体","楷体_gb2312","zw",sans-serif;
+}
+
+
+/*标题2作者*/
+.h2author {
+	margin:0;
+	font-family:"kt","楷体","楷体_gb2312","zw",sans-serif;
+	color:gray;
+	font-size:0.9em;
+	display:block;
+}
+
+.h2note:first-child {margin-top:1.2em;}
+.h2note:last-child {margin-bottom:1.2em;}
+
+/*标题3注*/
+.h3note {
+	margin:0 0 0 4em;
+	border-style: none none none solid;
+	border-width: 0px 0px 0px 10px;
+	border-color: lightpink;
+	color: darkred;
+	font-family:"fs","仿宋","仿宋_gb2312","zw",sans-serif;
+	font-size:90%;
+}
+.h3note:first-child {margin-top:1.2em;}
+.h3note:last-child {margin-bottom:1.2em;}
+
+/*称呼*/
+.call {
+	margin-left: 0em;
+	font-family:"fs","仿宋","仿宋_gb2312","zw",serif;
+	text-indent: 0em!important;
+}
+
+/*首字上升Initial Raise*/
+.raise:first-letter {
+	font-size:4em;
+	font-weight:bold;
+}
+
+.initialraise {
+	font-size:4em;
+	font-weight:bold;
+}
+
+/*首字下沉Initial Sinking*/
+.sinking:first-letter  {
+	color: gray;
+	font-size:4em;
+	font-weight:bold;
+	float:left;
+	margin:0.3em 5px 20px 0px;
+}
+
+.initialsinking {
+	color:#9b1d29; 
+	font-size:2em;
+	font-weight:bold;
+	float:left;
+	margin:0.3em 5px 20px 0px;
+	text-indent: 0em!important;
+}
+
+/*插文*/
+.box {
+	margin-left: 1em;
+	margin-right: 1em;
+	font-family: "fs","仿宋","仿宋_gb2312","zw",sans-serif;
+	font-size:90%;
+	color: darkblue;
+}
+	
+/*插文标题（文内标题*/
+.boxtitle {
+	margin: 0.3em 1em 0.3em 1em;
+    font-size:1em;
+    text-indent: 0em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 110%;
+    font-family:"ht","微软雅黑","黑体","zw",sans-serif;   
+}
+
+/*引用*/
+.quote {
+	font-family:"kt","楷体","楷体_gb2312","zw",serif;
+    font-size: 1.0em;
+    text-indent: 2em;
+    line-height: 1;
+}
+
+p.quote{
+	margin:2pt 1em 2pt 2em;
+}
+
+.quotecenter {
+	font-family:"kt","楷体","楷体_gb2312","zw",serif;
+    margin: 1em 0.5em 1em 0.5em;
+    font-size: 1.0em;
+    text-align:center;
+    line-height: 1;
+}
+
+.lettertitle {
+	color: #365f91; 
+	font-family:"kt", serif;
+	line-height:130%;
+	text-indent:0!important;
+	text-align: left;
+	font-size:1em;
+	margin:1em 1em 1em 0em;
+}
+
+p.lettertitle{
+text-indent: 0em!important;
+}
+
+/*引用标题*/
+.quotetitle {
+	text-align: center;
+	font-family:"ht","微软雅黑","黑体","zw",sans-serif;
+}
+
+
+.say1 {
+	color:#000;
+	font-family:"fs", "zw", sans-serif;
+}
+
+.say2 {
+	margin: 0 0 0 1em;
+	font-weight:bold;
+	color:#000;
+	font-family:"kt","zw",serif;
+}
+
+/*强调.重点*/
+.heavy {
+	font-style:italic;
+	font-family:"ht", "zw",sans-serif;
+	font-weight:bold;
+	color: #365f91; 
+}
+p.heavy{margin:1.5em 0 1em 0};
+/*评论*/
+.review {
+	font-family:"kt","楷体","楷体_gb2312","zw",serif;
+	color: darkblue;
+}
+	
+/*落款*/
+.signature {
+	color: #365f91; 
+	padding-right:1em;
+    padding-top:1em;
+	padding-bottom:1em;
+	font-family:"kt","楷体","楷体_gb2312","zw",serif;
+	text-align: right;
+}
+
+/*落款日期*/
+.date {
+	padding-left:40%;
+	font-family:"kt","楷体","楷体_gb2312","zw",serif;
+	color:Indigo;
+}
+
+
+/*注释（脚注尾注）标题*/
+.annotationtitle {
+	margin-top:30pt;
+	font-family:"ht","微软雅黑","黑体","zw",sans-serif;
+}
+
+/*注释*/
+.annotation {
+	font-family:"zw","宋体","明体","明朝",serif;
+	font-size:90%;
+}
+
+
+/*图片说明*/
+.imagenote {
+	margin: 0em;
+	text-align:center;
+	font-family:"kt","楷体","楷体_gb2312","zw",sans-serif;
+	color:DarkSlateGray;
+}
+
+.nostyle {
+  list-style-type: none;
+}
+
+.noindent{
+text-indent:0em!important;
+margin:1.5em 0 1.5em 0;
+}
+
+.h1spe {
+	font-family:"ht","微软雅黑","黑体","zw",sans-serif;
+	color: #369;
+	font-size:1.3em;
+	font-weight:160%;
+}
+
+.bold{font-weight:bold;};

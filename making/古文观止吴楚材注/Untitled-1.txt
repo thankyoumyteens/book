@@ -1,0 +1,2 @@
+\((.+?)\)
+<span class="comment2">【$1】</span>

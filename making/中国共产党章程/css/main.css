@@ -28,7 +28,16 @@ p {
     margin-top: 1em;
     margin-bottom: 1em;
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 400;
+}
+
+li {
+    text-align: justify;
+    line-height: 130%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.95em;
+    font-weight: 300;
 }
 
 .comment {
